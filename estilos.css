@@ -1,0 +1,130 @@
+body {
+  background: #1a1a1a;
+  color: #eaeaea;
+  font-family: sans-serif;
+  max-width: 700px;
+  margin: auto;
+  padding: 30px 2px;
+}
+
+h1 {
+  font-size: 42px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+  opacity: 0.7;
+  margin-top: 20px;
+}
+
+.sub {
+  font-size: 28px;
+  opacity: 0.5;
+}
+
+
+
+
+
+.visor img {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+
+
+.visor img {
+  scroll-snap-align: start;
+}
+.visor {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow-y: scroll;
+
+  scroll-snap-type: y proximity;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+
+  margin-top: 80px;
+  margin-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.visor::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+<div class="visor">
+  <img src="img/port00.png" loading="lazy">
+  <img src="img/port01.png" loading="lazy">
+  <img src="img/port02.png" loading="lazy">
+  <img src="img/port03.png" loading="lazy">
+  <img src="img/port04.png" loading="lazy">
+  <img src="img/port05.png" loading="lazy">
+  <img src="img/port06.png" loading="lazy">
+  <img src="img/port07.png" loading="lazy">
+  <img src="img/port08.png" loading="lazy">
+  <img src="img/port09.png" loading="lazy">
+  <img src="img/port10.png" loading="lazy">
+</div>
+
+
+
+.divider {
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+  margin: 40px 0;
+}
+.contacto {
+  margin-bottom: 70px;
+}
+.tel-linea {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.icono {
+  width: 28px;
+  height: 28px;
+  opacity: 0.8;
+}
+
+.tel-linea span {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.iconos {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.iconos img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.85;
+  transition: 0.2s ease;
+}
+
+.iconos img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+
+
+@media (min-width: 768px) {
+  .visor {
+    height: 70vh;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

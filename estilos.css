@@ -110,7 +110,7 @@ h2 {
 
 .iconos {
   display: flex;
-  gap: 12px;
+  gap: 16px;
   margin-top: 15px;
   padding-left: 40px;
 }
@@ -131,7 +131,7 @@ h2 {
 
 @media (min-width: 768px) {
   .visor {
-    height: 58vh;
+  min-height: 58vh;
   }
 }
 
